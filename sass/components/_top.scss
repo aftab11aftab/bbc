@@ -1,0 +1,41 @@
+.top {
+
+        grid-column: 2/12;
+    
+
+    &__nav {
+        display: flex;
+    }
+
+
+
+    &__item {
+        padding: 1rem 3rem;
+    }
+    &__item2 {
+        display: flex;
+    }
+
+    &__img {
+
+    }
+    &__link {
+        text-decoration: none; 
+        color: #fff;
+    } 
+    &__img2 {
+
+    }
+    &__input {
+
+    } 
+    &__button {
+
+    }
+
+    &__search-ico {
+        height: 2rem;
+        width: 3rem; 
+    }
+}
+

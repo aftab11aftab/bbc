@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;             // 10px = 1rem
+
+    @include respond(tab-land) {  // 9px = 1rem
+        font-size: 56.25%;
+    } 
+    @include respond(tab) {       // 8px = 1rem
+        font-size: 50%;
+    }
+    @include respond(phone) {     // 7px = 1rem
+        font-size: 44%;
+    }
+    @include respond(big) {       // 12px = 1rem
+        font-size: 75%;
+    }
+} 
+
+body {
+    box-sizing: border-box;
+} 
+
+// .container-box {
+//     margin: 0 auto;
+ 
+    .container {
+        background-color: rebeccapurple;
+        height: 100rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr repeat(10, minmax(min-content, 1fr)) 1fr;
+    }
+// }
